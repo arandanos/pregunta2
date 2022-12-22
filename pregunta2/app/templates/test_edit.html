@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+    <h2>Crear Test</h2>
+    <form method="POST" class="test-form">{% csrf_token %}
+        {{ form_test.as_p }}
+        <button type="submit" class="save btn btn-primary">Guardar</button>
+    </form>
+
+
+{% endblock content %}
+
+{% block scripts %}
+
+<script src="./static/test.js"></script>
+{% endblock scripts %}

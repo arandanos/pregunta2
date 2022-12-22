@@ -10,7 +10,7 @@ class Test (models.Model):
         verbose_name_plural = ("Tests")
 
     def __str__(self):
-        return self.name
+        return self.tema
 
 
 class Dificultad(models.Model):
@@ -18,10 +18,10 @@ class Dificultad(models.Model):
 
     class Meta:
         verbose_name = ("Dificultad")
-        verbose_name_plural = ("Dificultadws")
+        verbose_name_plural = ("Dificultades")
 
     def __str__(self):
-        return self.name
+        return self._id
 
 
 class Pregunta(models.Model):
@@ -35,7 +35,7 @@ class Pregunta(models.Model):
         verbose_name_plural = ("Preguntas")
 
     def __str__(self):
-        return self.name
+        return self.texto
 
 class Respuesta(models.Model):
 
@@ -49,6 +49,6 @@ class Respuesta(models.Model):
         verbose_name_plural = ("Respuestas")
 
     def __str__(self):
-        return self.name
+        return self.texto
 
 
